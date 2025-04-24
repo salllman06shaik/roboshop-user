@@ -1,8 +1,7 @@
-name: User ci
-on: [push,workflow_dispatch]
+name: User CI
+on: [push, workflow_dispatch]
 jobs:
   common:
     uses: salllman06shaik/github-actions-reusable/.github/workflows/ci.yaml
     with:
       component_name: user
-
