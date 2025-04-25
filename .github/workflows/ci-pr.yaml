@@ -1,0 +1,8 @@
+name: CI - Pull Request
+on: pull_request
+jobs:
+  common:
+    uses: salllman06shaik/github-actions-reusable/.github/workflows/ci-pr.yaml@main
+    with:
+      component_name: user
+      app_type: nodejs

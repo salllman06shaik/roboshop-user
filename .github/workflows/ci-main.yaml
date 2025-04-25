@@ -1,0 +1,12 @@
+name: CI - Main Branch
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  common:
+    uses: salllman06shaik/github-actions-reusable/.github/workflows/ci-main.yaml@main
+    with:
+      component_name: user
+      app_type: nodejs

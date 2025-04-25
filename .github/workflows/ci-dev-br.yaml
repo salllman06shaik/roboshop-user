@@ -1,0 +1,11 @@
+name: CI - Dev BRanch
+on:
+  push:
+    branches:
+      - "RB**"
+jobs:
+  common:
+    uses: salllman06shaik/github-actions-reusable/.github/workflows/ci-dev-br.yaml@main
+    with:
+      component_name: user
+      app_type: nodejs
